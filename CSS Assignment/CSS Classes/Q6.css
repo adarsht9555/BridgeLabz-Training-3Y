@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121826;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1b2436;
+}
+
+/* Center animations vertically and horizontally on the page */
+.animation-stage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex: 1;
+    padding: 2rem;
+}
+
+.anim-box {
+    background: #1e293b;
+    border-radius: 12px;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.anim-box span {
+    margin-top: auto;
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+/* 1. Moving Box Keyframes */
+@keyframes slideSide {
+    0% { transform: translateX(-30px); }
+    50% { transform: translateX(30px); }
+    100% { transform: translateX(-30px); }
+}
+
+.moving-box {
+    width: 50px;
+    height: 50px;
+    background-color: #38bdf8;
+    border-radius: 8px;
+    animation-name: slideSide;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0.2s;
+}
+
+/* 2. Bouncing Ball Keyframes */
+@keyframes bounceVertical {
+    0%, 100% { transform: translateY(-30px); animation-timing-function: ease-in; }
+    50% { transform: translateY(20px); animation-timing-function: ease-out; }
+}
+
+.bouncing-ball {
+    width: 45px;
+    height: 45px;
+    background-color: #f43f5e;
+    border-radius: 50%;
+    animation-name: bounceVertical;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* 3. Color Changing Text Keyframes */
+@keyframes colorChameleon {
+    0% { color: #a855f7; }
+    33% { color: #22c55e; }
+    66% { color: #eab308; }
+    100% { color: #a855f7; }
+}
+
+.color-text {
+    font-size: 1.25rem;
+    font-weight: bold;
+    animation: colorChameleon 4s ease-in-out infinite;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1b2436;
+}

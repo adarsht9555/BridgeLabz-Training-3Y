@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #1e293b;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+main {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 2.5rem 1.5rem;
+}
+
+/* 4-Column CSS Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+/* Product Card Styling */
+.product-card {
+    background-color: #ffffff;
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    /* Equal height guaranteed by Grid stretched items */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect: Scale & Elevation */
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.product-card h3 {
+    font-size: 1.1rem;
+    color: #0f172a;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+footer {
+    background-color: #1e293b;
+    color: #94a3b8;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Media Queries for Responsive Grid */
+@media (max-width: 900px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+}
+
+@media (max-width: 550px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* 1 column on mobile */
+    }
+}

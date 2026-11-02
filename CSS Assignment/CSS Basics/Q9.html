@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Magazine</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #e5e7eb;
+            font-family: Georgia, serif;
+        }
+
+        .newspaper {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: white;
+            column-count: 3;
+            column-gap: 40px;
+        }
+
+        .newspaper h1 {
+            column-span: all;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            border-bottom: 4px solid #111827;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+
+        .newspaper h2 {
+            column-span: all;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .newspaper img {
+            width: 180px;
+            float: left;
+            margin: 0 20px 10px 0;
+            border-radius: 8px;
+        }
+
+        .newspaper p {
+            text-align: justify;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 800px) {
+            .newspaper {
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 550px) {
+            .newspaper {
+                column-count: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="newspaper">
+
+        <h1>THE DAILY TECHNOLOGY</h1>
+
+        <h2>Technology and the Future</h2>
+
+        <img src="technology.jpg" alt="Technology">
+
+        <p>
+            Technology is changing the world at an incredible speed.
+            New inventions and digital services are influencing education,
+            business, healthcare and communication.
+        </p>
+
+        <p>
+            Artificial intelligence has become one of the most important
+            technologies of the modern world. It allows computers to learn
+            from information and perform tasks that previously required
+            human intelligence.
+        </p>
+
+        <p>
+            Cloud computing has changed how organizations store and
+            process information. Businesses can access powerful computing
+            resources without maintaining large physical infrastructure.
+        </p>
+
+        <p>
+            Cybersecurity is becoming increasingly important because more
+            personal and business information is stored online. Security
+            professionals work to protect networks, systems and users.
+        </p>
+
+        <p>
+            The future of technology will depend not only on innovation but
+            also on responsible and ethical use. People must understand
+            both the benefits and risks of emerging technologies.
+        </p>
+
+    </main>
+
+</body>
+</html>

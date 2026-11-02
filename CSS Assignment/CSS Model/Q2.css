@@ -1,0 +1,7 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #eef2ff; }
+.layout { min-height: 100vh; display: flex; justify-content: center; align-items: center; gap: 25px; flex-wrap: wrap; padding: 30px; }
+.box { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px; border-radius: 15px; }
+.one { width: 220px; height: 180px; background: #bfdbfe; }
+.two { width: 35%; height: 25vh; min-height: 150px; background: #bbf7d0; }
+.three { width: 18em; min-height: 170px; max-width: 280px; background: #fed7aa; overflow: auto; }

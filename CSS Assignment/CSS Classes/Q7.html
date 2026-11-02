@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q7 - UI Components Page</title>
+    <link rel="stylesheet" href="Q7.css">
+</head>
+<body>
+    <main class="viewport-center">
+        <!-- Card-like Container -->
+        <div class="ui-card">
+            <h2>User Controls Panel</h2>
+
+            <!-- Search Bar Component -->
+            <div class="component-group">
+                <label for="search-input">Search Database</label>
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search keywords...">
+                    <button class="search-btn">Search</button>
+                </div>
+            </div>
+
+            <!-- Dropdown Menu Component -->
+            <div class="component-group">
+                <label for="category-select">Filter Category</label>
+                <select id="category-select" class="dropdown-menu">
+                    <option value="">All Categories</option>
+                    <option value="tech">Technology</option>
+                    <option value="design">Design</option>
+                    <option value="marketing">Marketing</option>
+                </select>
+            </div>
+
+            <!-- Action Buttons Group -->
+            <div class="component-group button-row">
+                <button class="btn btn-save">Save Settings</button>
+                <button class="btn btn-cancel">Cancel</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

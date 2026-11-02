@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 - CSS Selectors Practice</title>
+    <link rel="stylesheet" href="Q4.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Selectors Practice Laboratory</h1>
+        <p>Demonstrating Element, Class, ID, Attribute, and Combinator selectors</p>
+    </header>
+
+    <main class="content-wrapper">
+        <!-- Element Selector Example -->
+        <section class="section-box">
+            <h2>1. Element & Class Selectors</h2>
+            <p>This paragraph is styled by an element selector.</p>
+            <p class="highlight-class">This paragraph uses a <code>.highlight-class</code> selector.</p>
+        </section>
+
+        <!-- ID Selector Example -->
+        <section class="section-box">
+            <h2>2. ID Selector</h2>
+            <p id="unique-id-target">This paragraph uses an <code>#unique-id-target</code> selector.</p>
+        </section>
+
+        <!-- Attribute Selector Example -->
+        <section class="section-box">
+            <h2>3. Attribute Selector</h2>
+            <a href="https://example.com" target="_blank">External Link (target="_blank")</a><br>
+            <a href="https://internal.com">Internal Link</a>
+        </section>
+
+        <!-- Combinators Examples -->
+        <section class="section-box combinators-container">
+            <h2>4. Combinator Selectors</h2>
+            
+            <div class="parent">
+                <p>Child Paragraph 1 (Direct Child: <code>.parent &gt; p</code>)</p>
+                <div>
+                    <p>Descendant Paragraph (Descendant: <code>.parent p</code>)</p>
+                </div>
+            </div>
+
+            <h3 class="sibling-head">Heading for Sibling Test</h3>
+            <p>Adjacent Sibling Paragraph (<code>h3 + p</code>)</p>
+            <p>General Sibling Paragraph 1 (<code>h3 ~ p</code>)</p>
+            <p>General Sibling Paragraph 2 (<code>h3 ~ p</code>)</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CSS Selectors Reference Page</p>
+    </footer>
+</body>
+</html>

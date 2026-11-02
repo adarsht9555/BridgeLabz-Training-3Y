@@ -1,0 +1,95 @@
+/* Reset and Typography */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Consolas', 'Courier New', monospace;
+    background-color: #f8f9fa;
+    color: #212529;
+    padding: 1rem;
+}
+
+header {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 6px;
+}
+
+/* Page Layout & Margins */
+.content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section-box {
+    background: #ffffff;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    border-left: 5px solid #0d6efd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* 1. Element Selector */
+p {
+    margin-bottom: 0.5rem;
+}
+
+/* 2. Class Selector */
+.highlight-class {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 0.4rem;
+    border-radius: 4px;
+}
+
+/* 3. ID Selector */
+#unique-id-target {
+    color: #d63384;
+    font-weight: bold;
+    border: 1px dashed #d63384;
+    padding: 0.5rem;
+}
+
+/* 4. Attribute Selector: matches links with target="_blank" */
+a[target="_blank"] {
+    color: #198754;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* 5. Child Combinator (>): selects direct child paragraphs */
+.parent > p {
+    color: #0d6efd;
+    font-weight: bold;
+}
+
+/* 6. Descendant Combinator (space): selects all nested paragraphs */
+.parent p {
+    padding-left: 1rem;
+}
+
+/* 7. Adjacent Sibling Combinator (+): selects immediately following paragraph */
+.sibling-head + p {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    padding: 0.3rem;
+}
+
+/* 8. General Sibling Combinator (~): selects all following sibling paragraphs */
+.sibling-head ~ p {
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: #6c757d;
+    margin-top: 2rem;
+}

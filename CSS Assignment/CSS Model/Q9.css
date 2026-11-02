@@ -1,0 +1,10 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f1f5f9; padding: 40px; }
+main { max-width: 500px; margin: auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 8px 25px #cbd5e1; }
+h1 { text-align: center; }
+form { display: flex; flex-direction: column; gap: 10px; }
+input, textarea { padding: 12px; border: 1px solid #94a3b8; border-radius: 8px; box-shadow: 0 2px 5px #e2e8f0; font: inherit; }
+input:focus { outline: 3px solid #93c5fd; outline-offset: 3px; }
+textarea:focus { outline: 3px dashed #86efac; outline-offset: 4px; }
+button { padding: 12px; border: 0; border-radius: 8px; background: #2563eb; color: white; cursor: pointer; }
+button:focus { outline: 3px double #1e3a8a; outline-offset: 3px; }

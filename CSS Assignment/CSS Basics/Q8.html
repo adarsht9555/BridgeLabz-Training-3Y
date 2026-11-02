@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 65px;
+            background-color: #172554;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 0 25px;
+            z-index: 1000;
+        }
+
+        .dashboard {
+            display: flex;
+            padding-top: 65px;
+            min-height: 100vh;
+        }
+
+        aside {
+            width: 230px;
+            background-color: #1e293b;
+            min-height: calc(100vh - 65px);
+        }
+
+        aside nav {
+            display: flex;
+            flex-direction: column;
+        }
+
+        aside a {
+            color: white;
+            text-decoration: none;
+            padding: 18px 25px;
+            border-bottom: 1px solid #334155;
+        }
+
+        aside a:hover {
+            background-color: #334155;
+        }
+
+        main {
+            flex: 1;
+            padding: 40px;
+        }
+
+        main h2 {
+            margin-bottom: 30px;
+        }
+
+        .boxes {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+            min-height: 150px;
+        }
+
+        .box h3 {
+            margin-bottom: 20px;
+        }
+
+        .box p {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        @media (max-width: 700px) {
+            .dashboard {
+                flex-direction: column;
+            }
+
+            aside {
+                width: 100%;
+                min-height: auto;
+            }
+
+            aside nav {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            aside a {
+                flex: 1;
+                text-align: center;
+            }
+
+            .boxes {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Dashboard</h1>
+    </header>
+
+    <div class="dashboard">
+
+        <aside>
+
+            <nav>
+                <a href="#">Dashboard</a>
+                <a href="#">Profile</a>
+                <a href="#">Messages</a>
+                <a href="#">Settings</a>
+                <a href="#">Logout</a>
+            </nav>
+
+        </aside>
+
+        <main>
+
+            <h2>Dashboard Overview</h2>
+
+            <div class="boxes">
+
+                <section class="box">
+                    <h3>Total Users</h3>
+                    <p>1,250</p>
+                </section>
+
+                <section class="box">
+                    <h3>Total Projects</h3>
+                    <p>85</p>
+                </section>
+
+                <section class="box">
+                    <h3>Completed Tasks</h3>
+                    <p>540</p>
+                </section>
+
+                <section class="box">
+                    <h3>Pending Tasks</h3>
+                    <p>75</p>
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

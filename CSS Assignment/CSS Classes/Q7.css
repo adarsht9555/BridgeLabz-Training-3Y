@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Soft background gradient */
+    background: linear-gradient(135deg, #a8c0ff 0%, #3f2b96 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.viewport-center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Card-like container using Flexbox */
+.ui-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.ui-card h2 {
+    color: #3f2b96;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.component-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.component-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+/* Search Bar Styling */
+.search-box {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-box input:focus {
+    border-color: #3f2b96;
+    box-shadow: 0 0 6px rgba(63, 43, 150, 0.3);
+}
+
+.search-btn {
+    padding: 0.6rem 1rem;
+    background-color: #3f2b96;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.search-btn:hover {
+    background-color: #2e1f72;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    padding: 0.6rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    outline: none;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.dropdown-menu:focus {
+    border-color: #3f2b96;
+}
+
+/* Button Row Layout */
+.button-row {
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.btn {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-save {
+    background-color: #10b981;
+    color: white;
+}
+
+.btn-cancel {
+    background-color: #ef4444;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}

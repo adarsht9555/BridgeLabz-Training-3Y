@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q8 - Box-Sizing Comparison</title>
+    <link rel="stylesheet" href="Q8.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Box-Sizing Comparison</h1>
+        <p>Demonstrating how content-box vs border-box affects rendered width</p>
+    </header>
+
+    <main class="comparison-wrapper">
+        <!-- Box 1: content-box (Default) -->
+        <section class="box-container content-box-demo">
+            <h2>box-sizing: content-box</h2>
+            <div class="box-dimensions">Specified Width: 300px<br>+ Padding: 30px (x2)<br>+ Border: 10px (x2)<br>= Total Width: 380px</div>
+            <p>Padding and borders are added <em>outside</em> the declared width, causing the box to expand beyond 300px.</p>
+        </section>
+
+        <!-- Box 2: border-box -->
+        <section class="box-container border-box-demo">
+            <h2>box-sizing: border-box</h2>
+            <div class="box-dimensions">Specified Width: 300px<br>+ Padding: 30px (x2)<br>+ Border: 10px (x2)<br>= Total Width: 300px</div>
+            <p>Padding and borders are absorbed <em>inside</em> the declared width, maintaining an exact total width of 300px.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CSS Box Model Reference</p>
+    </footer>
+</body>
+</html>

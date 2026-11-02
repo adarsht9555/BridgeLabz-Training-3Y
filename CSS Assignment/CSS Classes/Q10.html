@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q10 - Complete Mini User Interface Layout</title>
+    <link rel="stylesheet" href="Q10.css">
+</head>
+<body>
+    <!-- Semantic Header -->
+    <header class="app-header">
+        <div class="logo">MiniApp UI</div>
+        <nav class="app-nav">
+            <a href="#dashboard">Dashboard</a>
+            <a href="#profile" class="active">Profile</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Layout -->
+    <main class="main-layout">
+        <section class="ui-card">
+            <!-- Header Image -->
+            <div class="card-image-box">
+                <img src="https://picsum.photos/400/150?random=10" alt="User Banner">
+            </div>
+
+            <!-- Form Content -->
+            <form class="user-form" action="#" method="post" onsubmit="return false;">
+                <h2>Edit Profile Info</h2>
+
+                <div class="form-group">
+                    <label for="username">User Handle</label>
+                    <input type="text" id="username" value="@alex_developer" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" value="alex@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="bio">Short Bio</label>
+                    <textarea id="bio" rows="3">Frontend enthusiast building modern web interfaces.</textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Semantic Footer -->
+    <footer class="app-footer">
+        <p>&copy; 2026 MiniApp Dashboard. Fully Responsive Layout.</p>
+    </footer>
+</body>
+</html>

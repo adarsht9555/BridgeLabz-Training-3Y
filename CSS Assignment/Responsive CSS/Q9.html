@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q9 - Responsive Design Principles Summary</title>
+  <link rel="stylesheet" href="Q9.css">
+</head>
+<body>
+  <header>
+    <h1>Core Responsive Principles</h1>
+  </header>
+
+  <main class="principles-grid">
+    <div class="principle-card">
+      <h2>Fluid Layouts</h2>
+      <p>Uses percentage-based or fractional grid measurements instead of fixed pixels.</p>
+      <pre><code>.container {
+  width: 100%;
+  max-width: 1200px;
+}</code></pre>
+    </div>
+
+    <div class="principle-card">
+      <h2>Flexible Media</h2>
+      <p>Ensures images and video assets scale proportionately within bounding wrappers.</p>
+      <pre><code>img {
+  max-width: 100%;
+  height: auto;
+}</code></pre>
+    </div>
+
+    <div class="principle-card">
+      <h2>Breakpoints</h2>
+      <p>Media queries that alter CSS layout rules based on browser viewport constraints.</p>
+      <pre><code>@media (max-width: 600px) {
+  .grid { grid-template-columns: 1fr; }
+}</code></pre>
+    </div>
+  </main>
+</body>
+</html>

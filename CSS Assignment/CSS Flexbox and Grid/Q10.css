@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f5f9;
+    color: #334155;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header using Flexbox */
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f172a;
+    color: white;
+    padding: 1.2rem 2rem;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.nav-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    margin-left: 1.2rem;
+}
+
+/* Keyframe Animation for Title */
+@keyframes fadeInMoveDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-title {
+    animation: fadeInMoveDown 1s ease-out forwards;
+    color: #0f172a;
+    margin-bottom: 1rem;
+}
+
+/* Main Area: 2-Column Grid */
+.app-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    padding: 2.5rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    flex: 1;
+}
+
+.main-article {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.intro-p {
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* Inner Flexbox Container */
+.inner-flex-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.flex-box {
+    flex: 1;
+    background-color: #e0f2fe;
+    color: #0369a1;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.sidebar {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* Full Width Footer */
+.app-footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 1.2rem;
+    margin-top: auto;
+}
+
+/* Collapse into Single Column on Mobile */
+@media (max-width: 750px) {
+    .app-main {
+        grid-template-columns: 1fr;
+    }
+
+    .inner-flex-container {
+        flex-direction: column;
+    }
+}

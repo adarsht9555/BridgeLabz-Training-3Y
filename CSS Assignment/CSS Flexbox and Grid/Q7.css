@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0f172a;
+    min-height: 100vh;
+}
+
+/* Center animation using Flexbox alignment */
+.loader-stage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.loader-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.circle {
+    width: 24px;
+    height: 24px;
+    background-color: #38bdf8;
+    border-radius: 50%;
+    /* Infinite Y-axis animation */
+    animation: bounce 0.6s infinite alternate ease-in-out;
+}
+
+/* Animation Delays for sequential wave effect */
+.circle-1 {
+    animation-delay: 0s;
+}
+
+.circle-2 {
+    animation-delay: 0.2s;
+}
+
+.circle-3 {
+    animation-delay: 0.4s;
+}
+
+/* @keyframes transform translateY control */
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+        background-color: #38bdf8;
+    }
+    to {
+        transform: translateY(-30px);
+        background-color: #818cf8;
+    }
+}

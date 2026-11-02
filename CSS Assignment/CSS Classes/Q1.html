@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 - Pseudo-Classes Demonstration</title>
+    <link rel="stylesheet" href="Q1.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Pseudo-Classes Demonstration</h1>
+        <p>Interactive examples of :hover, :focus, :active, and :nth-child()</p>
+    </header>
+
+    <main class="demo-container">
+        <!-- Example 1: Hover -->
+        <section class="demo-card">
+            <h2>:hover</h2>
+            <button class="hover-btn">Hover Over Me</button>
+            <p>Triggers when the mouse pointer passes over an element. Changes background and scales up slightly.</p>
+        </section>
+
+        <!-- Example 2: Focus -->
+        <section class="demo-card">
+            <h2>:focus</h2>
+            <input type="text" class="focus-input" placeholder="Click or Tab here...">
+            <p>Triggers when an element gains focus (e.g., keyboard tab or click). Displays a blue border outline.</p>
+        </section>
+
+        <!-- Example 3: Active -->
+        <section class="demo-card">
+            <h2>:active</h2>
+            <button class="active-btn">Click and Hold</button>
+            <p>Triggers while an element is being activated/pressed down by the user.</p>
+        </section>
+
+        <!-- Example 4: nth-child -->
+        <section class="demo-card">
+            <h2>:nth-child()</h2>
+            <ul class="nth-list">
+                <li>Item 1 (Odd - Gold)</li>
+                <li>Item 2 (Even - Teal)</li>
+                <li>Item 3 (Odd - Gold)</li>
+                <li>Item 4 (Even - Teal)</li>
+            </ul>
+            <p>Selects elements based on their position in a parent element. Alternates list item backgrounds.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CSS Pseudo-Classes Demo. All rights reserved.</p>
+    </footer>
+</body>
+</html>

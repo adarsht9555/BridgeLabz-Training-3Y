@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background-color: #f1f5f9;
+  color: #0f172a;
+  padding: 2rem 1rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.cheatsheet-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.topic-box {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-left: 5px solid #0284c7;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.topic-box:hover {
+  transform: translateX(5px);
+  border-left-color: #0369a1;
+}
+
+.topic-box h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #0369a1;
+}
+
+code {
+  background-color: #e2e8f0;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 700px) {
+  .cheatsheet-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topic-box h2::after {
+    content: ": ";
+  }
+}

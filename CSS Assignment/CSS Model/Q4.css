@@ -1,0 +1,9 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f3f4f6; text-align: center; padding: 60px 20px; }
+h1 { text-shadow: 3px 3px 5px #aaa; }
+.cards { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+.card { width: 240px; padding: 45px 20px; background: white; border-radius: 15px; transition: all 0.3s ease; }
+.shadow1 { box-shadow: 0 5px 12px #aaa; }
+.shadow2 { box-shadow: 5px 10px 20px #999; }
+.shadow3 { box-shadow: 0 0 18px #aaa; }
+.card:hover { transform: translateY(-12px); box-shadow: 0 18px 30px #888; }

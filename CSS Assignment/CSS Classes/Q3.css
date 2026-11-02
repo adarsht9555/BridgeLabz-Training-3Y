@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #111;
+}
+
+header h1 {
+    color: #00d1b2;
+    margin-bottom: 0.5rem;
+}
+
+/* Grid Showcase Layout */
+.showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.showcase-card {
+    background-color: #2a2a2a;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.4s ease;
+}
+
+/* Hover Effects: Scale up & Darken */
+.showcase-card:hover img {
+    transform: scale(1.1);
+}
+
+.showcase-card:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+figcaption {
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e0e0e0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #111;
+    margin-top: auto;
+}
+
+/* Responsive Behavior below 700px */
+@media (max-width: 700px) {
+    .showcase-grid {
+        grid-template-columns: 1fr;
+    }
+}

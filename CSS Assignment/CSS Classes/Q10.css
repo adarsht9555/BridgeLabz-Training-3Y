@@ -1,0 +1,180 @@
+/* Global Resets & Box-Sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f5f9;
+    color: #334155;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+.app-header {
+    background-color: #0f172a;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.app-nav a {
+    color: #94a3b8;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.app-nav a:hover,
+.app-nav a.active {
+    color: #ffffff;
+}
+
+/* Main Layout Centering */
+.main-layout {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+/* Card Component */
+.ui-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    width: 100%;
+    max-width: 480px;
+    border: 1px solid #e2e8f0;
+}
+
+.card-image-box img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Form Layout */
+.user-form {
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.user-form h2 {
+    font-size: 1.3rem;
+    color: #0f172a;
+    margin-bottom: 0.2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #64748b;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.65rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Focus Effects */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #0284c7;
+    box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.2);
+}
+
+/* Form Actions Flexbox */
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.btn {
+    flex: 1;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #0284c7;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0369a1;
+}
+
+.btn-secondary {
+    background-color: #e2e8f0;
+    color: #475569;
+}
+
+.btn-secondary:hover {
+    background-color: #cbd5e1;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Footer Styling */
+.app-footer {
+    background-color: #0f172a;
+    color: #64748b;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+}
+
+/* Responsive Behavior */
+@media (max-width: 500px) {
+    .app-header {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .app-nav a {
+        margin: 0 0.5rem;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+}

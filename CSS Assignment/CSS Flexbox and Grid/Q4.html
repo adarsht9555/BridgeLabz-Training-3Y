@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 - Dashboard Grid Layout</title>
+    <link rel="stylesheet" href="Q4.css">
+</head>
+<body>
+    <div class="dashboard-grid">
+        <!-- Header spanning across all columns -->
+        <header class="dash-header">
+            <h2>Analytics Dashboard</h2>
+        </header>
+
+        <!-- Sidebar on left -->
+        <aside class="dash-sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#reports">Reports</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content Grid Boxes -->
+        <main class="dash-main">
+            <!-- Box 1: Spans two columns -->
+            <div class="dash-box box-wide">
+                <h3>Primary Performance Overview</h3>
+                <p>Spans two columns (grid-column: span 2;)</p>
+            </div>
+
+            <div class="dash-box">
+                <h3>Revenue Stats</h3>
+                <p>Metrics details 1</p>
+            </div>
+
+            <div class="dash-box">
+                <h3>User Growth</h3>
+                <p>Metrics details 2</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

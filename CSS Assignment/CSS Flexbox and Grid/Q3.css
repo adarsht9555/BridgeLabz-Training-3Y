@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header links spaced evenly */
+.homepage-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1e293b;
+    padding: 1.2rem;
+    border-bottom: 1px solid #334155;
+}
+
+.homepage-header a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: color 0.2s ease;
+}
+
+.homepage-header a:hover {
+    color: #ffffff;
+}
+
+/* Main Area Flexbox Alignment */
+.homepage-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 1.5rem;
+    flex: 1;
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.box {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    padding: 2.5rem 1.5rem;
+    border-radius: 12px;
+    flex: 1 1 250px;
+    max-width: 320px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    /* Transition for rotate transform */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.box h2 {
+    color: #38bdf8;
+    margin-bottom: 1rem;
+}
+
+.box p {
+    color: #94a3b8;
+    line-height: 1.6;
+}
+
+/* Slight rotation on hover */
+.box:hover {
+    transform: rotate(2deg);
+    border-color: #38bdf8;
+}
+
+/* Footer spanning full width at bottom */
+.homepage-footer {
+    background-color: #1e293b;
+    color: #64748b;
+    text-align: center;
+    padding: 1.2rem;
+    width: 100%;
+    margin-top: auto;
+}

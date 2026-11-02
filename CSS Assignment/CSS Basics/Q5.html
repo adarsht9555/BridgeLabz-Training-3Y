@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+        }
+
+        .pricing {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .pricing > h1 {
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+        }
+
+        .plans {
+            display: flex;
+            gap: 25px;
+            align-items: stretch;
+        }
+
+        .plan {
+            flex: 1;
+            padding: 35px;
+            background-color: white;
+            border: 2px solid #cbd5e1;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .plan:hover {
+            transform: scale(1.05);
+            background-color: #e0f2fe;
+        }
+
+        .plan h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .price span {
+            font-size: 1rem;
+            font-weight: normal;
+        }
+
+        .plan ul {
+            list-style: none;
+            line-height: 2;
+            margin-bottom: 25px;
+        }
+
+        .plan a {
+            margin-top: auto;
+            display: inline-block;
+            padding: 12px;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .plan a:hover {
+            background-color: #1d4ed8;
+        }
+
+        .popular {
+            border: 3px solid #2563eb;
+            background-color: #eff6ff;
+        }
+
+        .popular-text {
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        @media (max-width: 700px) {
+            .plans {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="pricing">
+
+        <h1>Choose Your Plan</h1>
+
+        <div class="plans">
+
+            <section class="plan">
+
+                <h2>Basic</h2>
+
+                <div class="price">
+                    ₹199 <span>/month</span>
+                </div>
+
+                <ul>
+                    <li>5 Projects</li>
+                    <li>10 GB Storage</li>
+                    <li>Email Support</li>
+                </ul>
+
+                <a href="#">Choose Plan</a>
+
+            </section>
+
+            <section class="plan popular">
+
+                <h2>Standard</h2>
+
+                <p class="popular-text">Most Popular</p>
+
+                <div class="price">
+                    ₹499 <span>/month</span>
+                </div>
+
+                <ul>
+                    <li>20 Projects</li>
+                    <li>50 GB Storage</li>
+                    <li>Priority Support</li>
+                </ul>
+
+                <a href="#">Choose Plan</a>
+
+            </section>
+
+            <section class="plan">
+
+                <h2>Premium</h2>
+
+                <div class="price">
+                    ₹999 <span>/month</span>
+                </div>
+
+                <ul>
+                    <li>Unlimited Projects</li>
+                    <li>200 GB Storage</li>
+                    <li>24/7 Support</li>
+                </ul>
+
+                <a href="#">Choose Plan</a>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

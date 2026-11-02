@@ -1,0 +1,13 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f4f6f8; text-align: center; }
+header, footer { background: #1f2937; color: white; padding: 20px; }
+.boxes { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 50px; }
+.box { width: 180px; padding: 25px; background: white; font-weight: bold; transition: border-color 0.3s ease; }
+.solid { border: 5px solid #2563eb; }
+.dashed { border: 5px dashed #16a34a; }
+.double { border: 8px double #dc2626; }
+.groove { border: 8px groove #9333ea; }
+.rounded { border: 5px solid #f59e0b; border-radius: 25px; }
+.padding { border: 4px solid #0891b2; padding: 45px 20px; }
+.box:hover { border-color: #111827; }
+footer { margin-top: 20px; }

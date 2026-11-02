@@ -1,0 +1,12 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f8fafc; color: #1e293b; }
+.article { max-width: 800px; margin: 50px auto; padding: 35px; background: white; }
+h1 { font-family: Georgia, serif; font-size: 2.4em; text-align: center; letter-spacing: 2px; }
+p { font-size: 1.1em; line-height: 1.8; text-align: justify; }
+.serif { font-family: Georgia, serif; font-weight: 700; }
+.sans { font-family: Arial, sans-serif; font-weight: 300; }
+mark { background: #fde68a; color: #92400e; padding: 3px; }
+strong { color: #1d4ed8; }
+em { color: #be123c; }
+.article p:first-of-type::first-letter { font-size: 2.5em; font-weight: bold; }
+.article p:first-of-type::first-line { letter-spacing: 1px; }
