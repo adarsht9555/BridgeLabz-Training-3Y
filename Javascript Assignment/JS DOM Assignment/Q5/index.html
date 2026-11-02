@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery Modal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Image Gallery</h1>
+    <p>Click an image to preview it.</p>
+    <div class="gallery" id="gallery">
+      <img src="https://picsum.photos/id/1015/400/260" alt="Mountain river">
+      <img src="https://picsum.photos/id/1016/400/260" alt="Mountain forest">
+      <img src="https://picsum.photos/id/1025/400/260" alt="Dog portrait">
+      <img src="https://picsum.photos/id/1035/400/260" alt="Green landscape">
+      <img src="https://picsum.photos/id/1043/400/260" alt="Coastal rocks">
+      <img src="https://picsum.photos/id/1069/400/260" alt="Nature scene">
+    </div>
+  </main>
+  <div id="imageModal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-label="Image preview">
+      <button id="closeModal" class="close-button" type="button" aria-label="Close preview">×</button>
+      <img id="largeImage" src="" alt="Large preview">
+    </div>
+  </div>
+  <script src="Q5.js"></script>
+</body>
+</html>

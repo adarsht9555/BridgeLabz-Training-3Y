@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Table Filter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Student Directory</h1>
+    <label for="searchInput">Search by name, branch, or CGPA</label>
+    <input id="searchInput" type="search" placeholder="Start typing..." autocomplete="off">
+    <table>
+      <thead><tr><th>Name</th><th>Branch</th><th>CGPA</th></tr></thead>
+      <tbody id="studentRows">
+        <tr><td>Aarav Sharma</td><td>CSE</td><td>8.7</td></tr>
+        <tr><td>Diya Patel</td><td>ECE</td><td>9.1</td></tr>
+        <tr><td>Rohan Verma</td><td>Cybersecurity</td><td>8.2</td></tr>
+        <tr><td>Meera Singh</td><td>AI & ML</td><td>9.4</td></tr>
+        <tr><td>Kabir Gupta</td><td>CSE</td><td>7.9</td></tr>
+        <tr><td>Anaya Joshi</td><td>Cybersecurity</td><td>8.9</td></tr>
+      </tbody>
+    </table>
+    <p id="noResults" hidden>No results found</p>
+  </main>
+  <script src="Q6.js"></script>
+</body>
+</html>

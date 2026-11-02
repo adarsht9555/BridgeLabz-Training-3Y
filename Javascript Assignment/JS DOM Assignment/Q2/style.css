@@ -1,0 +1,48 @@
+* { 
+    box-sizing: border-box; 
+}
+body { 
+    margin: 0; 
+    padding: 30px; 
+    font-family: Arial, sans-serif; 
+    background: #f3f5f9; 
+}
+.container {
+    max-width: 620px; 
+    margin: 25px auto; 
+    padding: 25px; 
+    background: white; 
+    border-radius: 12px; 
+    box-shadow: 0 5px 22px #0001; 
+}
+label { 
+    display: block; 
+    margin-bottom: 8px; 
+}
+textarea { 
+    width: 100%; 
+    min-height: 180px; 
+    padding: 12px; 
+    font: inherit; 
+    resize: vertical; 
+    border: 1px solid #aaa; 
+    border-radius: 6px; 
+}
+.counter { 
+    font-weight: bold;
+    color: #26723a; 
+}
+.counter.warning { 
+    color: #c28a00; 
+}
+.counter.limit { 
+    color: #c62828; 
+}
+button { 
+    padding: 10px 16px; 
+    color: white; 
+    background: #245edb; 
+    border: 0; 
+    border-radius: 6px; 
+    cursor: pointer; 
+}
