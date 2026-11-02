@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q10 - Travel Agency Showcase</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Q10.css">
+</head>
+<body class="bg-light">
+    <!-- Navigation Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">Wanderlust Travel</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Carousel with custom intervals -->
+        <section id="travelCarousel" class="carousel slide shadow" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="https://picsum.photos/1200/500?tropical" class="d-block w-100" alt="Tropical Beach">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                        <h2 class="h3 fw-bold">Tropical Paradise</h2>
+                        <p>Relax on pristine white sand beaches with crystal clear waters.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="https://picsum.photos/1200/500?mountain" class="d-block w-100" alt="Alpine Expedition">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                        <h2 class="h3 fw-bold">Alpine Expedition</h2>
+                        <p>Conquer magnificent mountain peaks and scenic hiking trails.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="https://picsum.photos/1200/500?city" class="d-block w-100" alt="Cultural Cities">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                        <h2 class="h3 fw-bold">Historic Cities</h2>
+                        <p>Immerse yourself in rich culture, architecture, and culinary arts.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#travelCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#travelCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </section>
+
+        <!-- Booking Progress Bar Section -->
+        <section class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h3 class="h4 fw-bold mb-3">Summer Tour Booking Status</h3>
+                    <p class="text-muted">70% of available destination slots are already booked!</p>
+                    
+                    <!-- Striped and Animated Progress Bar -->
+                    <div class="progress" style="height: 25px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success fw-bold" 
+                             role="progressbar" 
+                             style="width: 70%;" 
+                             aria-valuenow="70" 
+                             aria-valuemin="0" 
+                             aria-valuemax="100">70% Booked</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-1 fw-bold">Wanderlust Travel Agency</p>
+            <p class="small text-muted mb-0">Contact: info@wanderlust.com | +1 (800) 555-TRIP</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

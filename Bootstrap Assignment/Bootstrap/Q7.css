@@ -1,0 +1,4 @@
+/* Additional styling for list items */
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}

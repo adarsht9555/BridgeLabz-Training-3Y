@@ -1,0 +1,6 @@
+/* Header banner overlay style */
+.header-banner {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/1200/400?food');
+    background-size: cover;
+    background-position: center;
+}

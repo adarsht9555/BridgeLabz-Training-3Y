@@ -1,0 +1,47 @@
+/* Override Bootstrap variables & apply Google Font */
+:root {
+    --bs-font-sans-serif: 'Poppins', sans-serif;
+    --theme-primary: #6c5ce7;
+    --theme-primary-hover: #5b4bc4;
+    --theme-dark: #2d3436;
+}
+
+body {
+    font-family: var(--bs-font-sans-serif);
+    background-color: #f9f9fb;
+}
+
+.text-primary-custom {
+    color: var(--theme-primary) !important;
+}
+
+.bg-primary-custom {
+    background-color: var(--theme-primary) !important;
+    color: #fff;
+}
+
+.btn-primary-custom {
+    background-color: var(--theme-primary);
+    border-color: var(--theme-primary);
+    color: #fff;
+}
+
+.btn-primary-custom:hover {
+    background-color: var(--theme-primary-hover);
+    border-color: var(--theme-primary-hover);
+    color: #fff;
+}
+
+.btn-outline-primary-custom {
+    color: var(--theme-primary);
+    border-color: var(--theme-primary);
+}
+
+.btn-outline-primary-custom:hover {
+    background-color: var(--theme-primary);
+    color: #fff;
+}
+
+.footer-custom {
+    background-color: var(--theme-dark);
+}

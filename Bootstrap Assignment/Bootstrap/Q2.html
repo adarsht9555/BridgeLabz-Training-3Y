@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2 - Personal Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Q2.css">
+</head>
+<body>
+    <header class="bg-light text-dark py-5 text-center border-bottom">
+        <div class="container">
+            <!-- Circular image with img-fluid and rounded-circle -->
+            <img src="https://picsum.photos/150" alt="Profile Picture" class="img-fluid rounded-circle mb-3 border border-3 border-primary shadow-sm" width="150" height="150">
+            <h1 class="fw-bold mb-1">Alex Morgan</h1>
+            <p class="text-muted lead mb-3">Full-Stack Web Developer & UI Designer</p>
+            <div class="d-flex justify-content-center gap-2 mb-2">
+                <!-- Spacing and button color utilities -->
+                <button class="btn btn-primary px-4 fw-bold">Hire Me</button>
+                <button class="btn btn-outline-dark px-4 fw-bold">Download CV</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <div class="bg-light p-4 rounded border shadow-sm">
+                    <h2 class="h4 fw-bold mb-3">Get in Touch</h2>
+                    <form>
+                        <!-- Form controls with bootstrap styling -->
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-dark w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2026 Alex Morgan Portfolio</p>
+    </footer>
+</body>
+</html>
